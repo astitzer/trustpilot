@@ -61,6 +61,30 @@ class ProductReviews extends AbstractApi{
     }
 
     /**
+     * Get imported product reviews
+     * https://developers.trustpilot.com/product-reviews-api#get-imported-product-reviews
+     *
+     *
+     * @param  string, array
+     * @return \stdClass
+     */
+    public function getImportedReviews($businessUnitId, $apiKey, $data)
+    {
+        return json_decode(
+            $this->api->get('product-reviews/business-units/'. $businessUnitId .'/imported-reviews',
+                ['query' =>
+                    [
+                       'page' => $data['page'],
+                       'perPage' => $data['perPage'],
+                       'sku' => $data['sku'],
+                       'language' => $data['language'],
+                       'apikey' => $apiKey
+                    ],
+                ]
+            ));
+    }
+
+    /**
      * Get private product reviews
      * https://developers.trustpilot.com/product-reviews-api#get-product-reviews-summaries-list
      *

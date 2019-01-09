@@ -1,5 +1,5 @@
 {
-    "name": "graphem/trustpilot",
+    "name": "astitzer/trustpilot",
     "description": "Simple PHP library for TrustPilot API",
     "license": "MIT",
     "authors": [
