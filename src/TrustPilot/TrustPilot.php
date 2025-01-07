@@ -23,7 +23,7 @@ use TrustPilot\Api\Invitation;
 use TrustPilot\Api\Resources;
 use TrustPilot\Api\BusinessUnit;
 use TrustPilot\Api\ProductReviews;
-use TrustPilot\Api\ServicesReviews;
+use TrustPilot\Api\ServiceReviews;
 
 class TrustPilot
 {
